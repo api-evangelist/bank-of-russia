@@ -1,0 +1,22 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.cbr.ru
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Apr 13 06:49:32 2027 GMT
+  hsts: false
+domains:
+- domain: cbr.ru
+  dnssec: false
+  caa:
+  - 0 issue "ssl.com"
+  - 0 issue "wosign.com"
+  - 0 issue "jprs.jp"
+  - 0 issue "letsencrypt.org"
+  - 0 issue "emsign.com"
+  - 0 issue "harica.gr"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
